@@ -1,19 +1,12 @@
-var MavariableString = 'toto';
+var MavariableString = "toto";
 
-var MavariableNumerique = 100;
+var MavariableNumerique = prompt("Entrez un nombre",100);
 
-var MavariableTabeau = ['Apple', 'Banana'];
+if (MavariableString == "toto" && MavariableNumerique !=200 || MavariableNumerique <=100){
+    alert("je suis le cas 1");
+}else{
+    alert("je suis le cas 2");
+}
 
-var MavariableObjet = window
 
-alert(MavariableString + MavariableNumerique + MavariableTabeau[0]+
-    MavariableObjet.location.pathname);
-
-var MavariableTailleFenetre = window.innerWidth;
-
-window.addEventListener('resize', () => {
-  
-alert((MavariableTailleFenetre = window.innerWidth));
-
-});
 
