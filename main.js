@@ -1,10 +1,21 @@
-
-function MavariableverifierTailleFenetre() {
-    if (window.innerWidth < 300) {
-        alert("La fenêtre est trop petite !");
+function factorielle(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n + factorielle(n - 1);
     }
 }
 
-window.addEventListener('resize', MavariableverifierTailleFenetre);
+let nombre = prompt("Saissisez un nombre pour calculer sa factorielle :");
 
-
+if (!isNaN(nombre)) {
+    let n = parseInt(nombre);
+    if (n >= 0) {
+        let resultat = factorielle(n);
+        alert("La factorielle de " + n + "est : " + resultat);
+    } else {
+        alert("Saissisez un nombre positif pour calculer la factorielle.");
+    }
+} else {
+    alert("Ce n'est pas un nombre valide.")
+}
