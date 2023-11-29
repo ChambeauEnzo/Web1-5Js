@@ -6,3 +6,16 @@ for (let i =1; i < nombre ; i++) {
  console.log(somme);
 
 }
+
+
+
+/*somme = i + somme*/       somme = addition(i ,somme);
+
+
+
+function addition (a,b) {
+let c = 0;
+c = a + b
+return c;
+
+}
