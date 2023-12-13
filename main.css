@@ -1,0 +1,23 @@
+.divD {
+    float: left;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 0 10px; /* Ajoutez une marge pour séparer les carrés */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrez verticalement sur toute la hauteur de la vue */
+}
+
+.ancienneClasse {
+    background-color: red;
+}
+
+.nouvelleClasse {
+    background-color: blue;
+}
